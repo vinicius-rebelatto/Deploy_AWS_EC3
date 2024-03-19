@@ -11,4 +11,10 @@ app.get('/atualizou',(req,res)=>{
     return res.json({message: 'Atualizado!'})
 })
 
+app.get('/teste',(req,res)=>{
+    const {name,date} = req.body;
+
+    return res.json({name, date});
+})
+
 app.listen(3333)
